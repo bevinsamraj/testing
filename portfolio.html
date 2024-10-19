@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            background-color: #e9ecef; /* Light gray background */
+            margin: 0;
+        }
+
+        header {
+            background-color: #6c757d; /* Gray header background */
+            color: #fff; /* White text */
+            padding: 1.5rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Center navigation */
+        }
+
+        nav ul li {
+            margin: 0 1.5rem; /* Spacing between nav items */
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.4s; /* Smooth color transition */
+        }
+
+        nav ul li a:hover {
+            color: #ffc107; /* Change color on hover */
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 3rem 0;
+            transition: transform 0.4s, box-shadow 0.4s; /* Smooth transition */
+        }
+
+        section:hover {
+            transform: translateY(-8px); /* Lift effect on hover */
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+        }
+
+        .hero {
+            background: #17a2b8; /* Teal background for hero section */
+            color: white; /* White text */
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .btn {
+            background: #28a745; /* Green button background */
+            color: #fff; /* White text */
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.4s; /* Smooth background transition */
+        }
+
+        .btn:hover {
+            background: #218838; /* Darker green on hover */
+        }
+
+        .about-img {
+            max-width: 160px;
+            border-radius: 50%;
+        }
+
+        .card {
+            margin-bottom: 2rem;
+            transition: transform 0.4s; /* Smooth scale effect */
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Scale effect on hover */
+        }
+
+        h2 {
+            border-bottom: 2px solid #17a2b8; /* Underline for section headings */
+            padding-bottom: 0.5rem; /* Space below heading */
+            margin-bottom: 1rem; /* Space above heading */
+        }
+
+        .list-group-item {
+            background-color: #f8f9fa; /* Light item background */
+            border: 1px solid #ced4da; /* Border color */
+        }
+
+        .list-group-item:hover {
+            background-color: #e2e6ea; /* Hover effect */
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <h1 align="center">Bevin Samraj - Flutter Developer</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h2>Hello, I'm <span class="text-dark">Bevin Samraj</span></h2>
+            <p>I build clean and responsive apps. Check out my works.</p>
+            <a href="#projects" class="btn btn-dark">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="d-flex align-items-center about-text">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZdfvPQ33n7g5BhvMNSWbilGOfsafirV4cWA&s" alt="Bevin Samraj" class="about-img mr-3">
+                <div>
+                    <p>I'm a dedicated, organized, and methodical individual with strong personal and interpersonal skills. I excel in time management, analytical skills, web development, and design.</p>
+                    <p>As an excellent team worker, I am keen and eager to learn and develop new skills. I’m reliable and often seek new responsibilities across various fields. My approach to work is active and dynamic—ensuring tasks are completed efficiently.</p>
+                    <p>I create user-friendly interfaces with intuitive designs that translate high-level requirements into effective interaction flows. My specialty is in crafting clean, artful designs that are both functional and aesthetically pleasing. I am determined, decisive, and always on the lookout for new opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="card project-card">
+                <div class="card-body">
+                    <h5 class="card-title">Project 1 - Simple Website</h5>
+                    <p class="card-text">A basic HTML and CSS website showcasing my development skills.</p>
+                    <a href="#" class="btn btn-dark">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="list-group">
+                <li class="list-group-item">HTML</li>
+                <li class="list-group-item">CSS</li>
+                <li class="list-group-item">JavaScript</li>
+                <li class="list-group-item">Flutter</li>
+                <li class="list-group-item">Responsive Design</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2>Contact</h2>
+            <form action="your-form-handler-url" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
